@@ -1,0 +1,105 @@
+html{box-sizing: border-box; font-family: IF APPLICABLE; }
+
+*, *::before, *::after {box-sizing:inherit;}
+
+#mycalculator {
+  margin: 30px;
+}
+
+#mycalculator div {
+  width: 200px;
+  height: 250px;
+  background: rgb(120,176,97);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button, .operators:nth-child(1) {
+  width: 25%;
+  height: 20%;
+  background: rgb(120,176,97);
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;  
+}
+
+#screen {
+  width: 75%;
+  border: .5 solid green;
+  text-align: right;
+  font-size: 20px;
+  background: none;
+  padding-right: 10px;
+  color: white;
+  padding-top: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#buttons {
+  display:flex;
+}
+
+#screen, button {
+  border: 0.25px solid rgba(236, 227, 227, 0.3);
+  margin: 0;
+  
+}
+
+.operators {
+  background: rgb(145, 191,147);
+}
+
+#equal{
+  background: rgb(120,176,97);
+}
+
+.top {
+  order:-10;
+}
+
+button:nth-child(9), button:nth-child(10), button:nth-child(11) {
+  order:-9;
+}
+
+button:nth-child(15) {
+  order:-8;
+}
+
+
+button:nth-child(6), button:nth-child(7), button:nth-child(8) {
+  order:-7;
+}
+
+button:nth-child(16) {
+  order:-6;
+}
+
+button:nth-child(3), button:nth-child(4), button:nth-child(5) {
+  order:-5;
+}
+
+button:nth-child(17) {
+  order:-4;
+}
+
+button:nth-child(12), button:nth-child(13), button:nth-child(14) {
+  order:-3;
+}
+
+button:nth-child(18) {
+  order:-2;
+}
+
+button:hover {
+  background: white;
+  opacity: 0.2;
+  color: black;
+  font-weight: bold;
+}
+
+
